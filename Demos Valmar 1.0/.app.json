@@ -3,17 +3,82 @@
   "views": [
     {
       "type": "kendo-ui-mobile:view",
-      "name": "home",
-      "components": [],
-      "title": "Home View",
+      "name": "inicio",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:about",
+          "name": "inicioModel",
+          "appName": "Demos de funcionalidades",
+          "appVersion": "Version 1",
+          "appDescription": "App description",
+          "contactButton": true,
+          "contactLabel": "Contactanos",
+          "contactMail": "victor.malaver@valmar.com.pe",
+          "facebookButton": true,
+          "facebookLabel": "Like en Facebook",
+          "facebookLink": "https://www.facebook.com/Valmar",
+          "twitterButton": true,
+          "twitterLabel": "Siguenos en Twitter",
+          "twitterLink": "https://twitter.com/Valmar"
+        }
+      ],
+      "title": "Inicio",
       "addToNavigation": true,
       "icon": "home"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "georeferencia",
+      "components": [],
+      "title": "Georeferencia",
+      "addToNavigation": true,
+      "icon": "globe"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "multimedia",
+      "components": [],
+      "title": "Multimedia",
+      "addToNavigation": true,
+      "icon": "play"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "nfc",
+      "components": [],
+      "title": "NFC",
+      "addToNavigation": true,
+      "icon": "share"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "elearning",
+      "components": [],
+      "title": "Elearning",
+      "addToNavigation": true,
+      "icon": "bookmarks"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "scanner",
+      "components": [],
+      "title": "Scanner",
+      "addToNavigation": true,
+      "icon": "camera"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "firma",
+      "components": [],
+      "title": "Firma",
+      "addToNavigation": true,
+      "icon": "edit"
     }
   ],
   "dataProviders": [],
   "name": "kendoUiMobileApp",
   "navigation": "tabstrip",
-  "view": "home",
+  "view": "inicio",
   "transition": "slide",
   "skin": "flat"
 }

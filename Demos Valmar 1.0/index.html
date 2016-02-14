@@ -6,46 +6,53 @@
     <meta charset="utf-8">
     <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet">
     <link href="styles/main.css" rel="stylesheet">
-
     <script src="cordova.js"></script>
     <script src="kendo/js/jquery.min.js"></script>
     <script src="kendo/js/kendo.mobile.min.js"></script>
     <script src="app.js"></script>
+    <!--     FontAwesome Agregado por Kike para iconos -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 
 <body id="kendoUiMobileApp">
-    <script src="components/home/index.js"></script>
+    <script src="components/firma/index.js"></script>
+    <script src="components/scanner/index.js"></script>
+    <script src="components/elearning/index.js"></script>
+    <script src="components/nfc/index.js"></script>
+    <script src="components/multimedia/index.js"></script>
+    <script src="components/georeferencia/index.js"></script>
+    <script src="components/inicio/index.js"></script>
     <div data-role="layout" data-id="main">
         <header data-role="header">
             <div data-role="navbar">
                 <span data-role="view-title"></span>
             </div>
         </header>
-
         <!-- application views will be rendered here -->
-
         <footer data-role="footer">
             <div data-role="tabstrip" id="navigation-container">
-                <a href="components/home/view.html" data-icon="home">Home View</a>
+                <a href="components/inicio/view.html" data-icon="home">Inicio</a>
+                <a href="components/georeferencia/view.html" data-icon="globe">Georeferencia</a>
+                <a href="components/multimedia/view.html" data-icon="play">Multimedia</a>
+                <a href="components/nfc/view.html" data-icon="share">NFC</a>
+                <a href="components/elearning/view.html" data-icon="bookmarks">Elearning</a>
+                <a href="components/scanner/view.html" data-icon="camera">Scanner</a>
+                <a href="components/firma/view.html" data-icon="edit">Firma</a>
             </div>
         </footer>
     </div>
-
     <div data-role="layout" data-id="main-nonav">
         <header data-role="header">
             <div data-role="navbar">
                 <span data-role="view-title"></span>
             </div>
         </header>
-
         <!-- application views will be rendered here -->
-
         <footer data-role="footer">
         </footer>
     </div>
     <!-- START_CUSTOM_CODE_kendoUiMobileApp -->
     <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
-
     <!-- END_CUSTOM_CODE_kendoUiMobileApp -->
 </body>
 
