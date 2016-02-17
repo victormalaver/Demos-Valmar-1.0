@@ -1,12 +1,12 @@
 'use strict';
 
-(function() {
+(function () {
     var app = {
         data: {}
     };
 
-    var bootstrap = function() {
-        $(function() {
+    var bootstrap = function () {
+        $(function () {
             app.mobileApp = new kendo.mobile.Application(document.body, {
                 transition: 'slide',
                 skin: 'flat',
@@ -16,7 +16,7 @@
     };
 
     if (window.cordova) {
-        document.addEventListener('deviceready', function() {
+        document.addEventListener('deviceready', function () {
             if (navigator && navigator.splashscreen) {
                 navigator.splashscreen.hide();
             }
@@ -34,7 +34,7 @@
 
     window.app = app;
 
-    app.isOnline = function() {
+    app.isOnline = function () {
         if (!navigator || !navigator.connection) {
             return true;
         } else {

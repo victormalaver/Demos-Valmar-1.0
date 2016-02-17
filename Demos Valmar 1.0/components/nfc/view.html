@@ -1,7 +1,40 @@
 <div data-role="view" data-title="NFC" data-layout="main" data-model="app.nfc" data-show="app.nfc.onShow" data-after-show="app.nfc.afterShow">
-
     <!-- START_CUSTOM_CODE_nfc -->
     <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
-
     <!-- END_CUSTOM_CODE_nfc -->
+    <div class="demo" data-role="listview" data-style="inset">
+        <h3 class="hassubtitle">Comprobar la disponibilidad</h3>
+        <div class="subtitle">
+            Sólo para Android. El mensaje de respuesta de error es NO_NFC (sin soporte de hardware ) o NFC_DISABLED ( compatible, pero desactivado) .
+        </div>
+        <button data-role="button" class="button" data-bind="click: checkNfcEnabled">NFC habilitado?</button>
+        <h3>Lectura</h3>
+        <button data-role="button" class="button" data-bind="click: startListening">Empieza a escuchar</button>
+        <button data-role="button" class="button" data-bind="click: stopListening">Dejar de escuchar</button>
+        <div id="output"></div>
+        <h3 class="hassubtitle">Escritura</h3>
+        <div class="subtitle">
+            Acerque a un receptor NFC y pulse el botón.
+        </div>
+        <form>
+            <div class="km-listview-wrapper">
+                <ul class="form-content km-widget km-listview km-list km-listinset" data-role="listview" data-style="inset">
+                    <li>
+                        <label>Escriba en el NFC:
+                            <input data-bind="value: homeModel.fields.textooo" type="text" placeholder="Hello Valmar" id="TextoIngresado">
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </form>
+        <button data-role="button" class="button k-primary" data-bind="click: write"><i class="fa fa-floppy-o"></i> Grabar</button>
+        <button class="k-button k-primary" type="submit">Submit</button>
+        <h3 class="hassubtitle">Compartir</h3>
+        <div class="subtitle">
+            Sincronizar un dispositivo receptor NFC contra la el tuyo.
+            <br/> en Windows Phone primero pulse el botón de escritura.
+        </div>
+        <button data-role="button" class="button" data-bind="click: startSharing">Empezar a compartir</button>
+        <button data-role="button" class="button" data-bind="click: stopSharing">Dejar de compartir</button>
+    </div>
 </div>
